@@ -5,6 +5,7 @@ Route::get('home','HomeController@index');
 Route::get('user','HomeController@indexnguoidung');
 Route::get('trogiup','HomeController@trogiup');
 Route::get('tintuc','HomeController@tintuc');
+Route::get('luong','LuongController@getDanhSach');
 
 	Route::get('chucvu', 'ChucVuController@getDanhSach');
 	Route::get('themcv', 'ChucVuController@getThem');
