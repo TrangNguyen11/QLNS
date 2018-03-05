@@ -1,11 +1,16 @@
 <?php
-Route::get('/','HomeController@index');
+Route::get('/',['middleware'=>'check-permission:user|admin','uses'=>'HomeController@index']);
 Route::get('trangchu','HomeController@index');
 Route::get('home','HomeController@index');
 Route::get('user','HomeController@indexnguoidung');
 Route::get('trogiup','HomeController@trogiup');
 Route::get('tintuc','HomeController@tintuc');
 Route::get('luong','LuongController@getDanhSach');
+
+Route::get('chamcong','chamcongcontroller@getDanhSach');
+Route::get('themca','chamcongcontroller@getThem');
+
+Route::post('tongngay','chamcongcontroller@tongNgay');
 
 	Route::get('chucvu', 'ChucVuController@getDanhSach');
 	Route::get('themcv', 'ChucVuController@getThem');

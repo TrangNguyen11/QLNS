@@ -7,7 +7,7 @@
         <div class="col-lg-12 col-xs-12">
 		<div class="box box-block bg-white">
 			<div>
-				<h5 style="color: red; font-size: 25px">Danh sách chức vụ</h5>
+				<h5 style="color: red; font-size: 25px">Danh sách chấm công</h5>
 				<div class="form-inline">
 				<form action="timkiem" method="post" class="form-inline">
 					<input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -26,21 +26,25 @@
 			<table class="table table-stripped table-bordered table-hover">
 				<thead>
 					<tr align="center">
-						<th>Mã chức vụ</th>
-						<th>Tên chức vụ</th>
-						<th>Hệ số chức vụ</th>
+						<th>Mã Chấm Công</th>
+						<th>Tên Nhân Viên</th>
+						<th>Vào Ca </th>
+						<th>Kết Ca</th>
+						<th>Giờ Làm Việc</th>
 						<th>Thao tác</th>
 					</tr>
 				</thead>
 				<tbody>
-					@foreach($chucvu as $cv)
+					@foreach($chamcong as $cc)
 					<tr>
-						<td>{{ $cv->MaCV }}</td>
-						<td>{{ $cv->TenCV }}</td>
-						<td>{{ $cv->HeSoCV }}</td>
+						<td>{{ $cc->MaCC }}</td> 
+						<td>{{ $cc->HoTen }}</td>
+						<td>{{ $cc->VaoCa }}</td>
+						<td>{{ $cc->HetCa }}</td>
+						<td>{{ $cc->TongGio }}</td>
 						<td>
-							<a href="suacv?macv={{ $cv->MaCV }}" data-toggle="modal" data-whatever="@mdo"><span class="fa fa-pencil"></span></a>&nbsp;
-							<a href="xoacv?macv={{ $cv->MaCV }}"><span class="fa fa-trash"></span></a>							
+							<a href="suacv?macv={{ $cc->MaCC }}" data-toggle="modal" data-whatever="@mdo"><span class="fa fa-pencil"></span></a>&nbsp;
+							<a href="xoacv?macv={{ $cc->MaCC }}"><span class="fa fa-trash"></span></a>							
 						</td>
 					</tr>
 					@endforeach

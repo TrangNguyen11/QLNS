@@ -1,6 +1,6 @@
 <header class="main-header">
     <!-- Logo -->
-    <a href="http://localhost:81/QLNHANSU/public/" class="logo">      
+    <a href="{{url('/')}}" class="logo">      
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg"><b>Quản Lý Nhân Sự</b></span>
     </a>

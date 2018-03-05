@@ -1,24 +1,25 @@
-@extends('layout.index');
+@extends('layout.index')
 @section('content')
 <div class="content-wrapper">
-<section class="content">
-	<div class="container-fluid">		
-		<div class="row">
-      <div class="col-lg-2 col-xs-12">        	
+<section class="content">	
+	<div class="row">
+      <div class="col-xs-12">        	
 				<div class="box box-block bg-white">
 					<div>
 						<h5 style="color: red; font-size: 25px">Danh sách nhân viên</h5>
-						<form action="#" method="get" class="form-inline">
+						<div class="form-inline">
+						<form action="timkiem" method="post" class="form-inline">
+							<input type="hidden" name="_token" value="{{ csrf_token() }}">
 					        <div class="input-group">
-					          <input type="text" name="" class="form-control" placeholder="Search...">
+					          <input type="text" name="tukhoa" class="form-control" placeholder="Search...">
 					          <span class="input-group-btn">
 					                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
 					                </button>
 					          </span>
-					        </div>
-					        <a type="submit" href="themnv" class="btn btn-primary">Thêm</a>
+					        </div>	
+					        <a type="submit" href="themnv" class="btn btn-primary">Thêm</a>		        
 					    </form>
-						
+						</div>
 					</div>
 					<div class="table-responsive">
 						<table class="table table-stripped table-bordered table-hover">
@@ -85,7 +86,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 </section>
 </div>
 @endsection

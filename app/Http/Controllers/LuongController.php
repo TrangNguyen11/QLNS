@@ -13,4 +13,5 @@ class LuongController extends Controller
         return view('page.luong',['luong'=>$luong]);
     }
 
-}
+} 
+  

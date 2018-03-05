@@ -20,7 +20,7 @@
             <li class="active"><a href="phongban"><i  class="fa fa-list"></i> Quản Lý Phòng Ban</a>
             </li>
           </ul>
-        </li>
+        </li> 
         <li><a href="chucvu"><i class="fa fa-th-large"></i> Quản Lý Chức Vụ</a></li>
         <li><a href="nhanvien"><i class="fa fa-pencil-square-o"></i> Quản Lý Nhân Sự</a></li>
         
@@ -33,10 +33,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> Theo Tháng</a></li>
-            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Quý</a></li>
-            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Năm</a></li>
-            <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Ngày</a></li>
+
+            <li><a href="chamcong"><i class="fa fa-circle-o"> </i>Bản Chấm Công</a></li>
+            <li><a href="luong"><i class="fa fa-circle-o"></i>Thông tin lương</a></li>
+            
           </ul>
         </li>
         <li class="treeview">
@@ -48,7 +48,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Báo Cáo</a></li>
+            <li><a href="luong"><i class="fa fa-circle-o"></i> Báo Cáo</a></li>
             <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Thống Kê</a></li>
           </ul>
         </li>

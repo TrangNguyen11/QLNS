@@ -2,10 +2,10 @@
 
 @section('content')
 <div class="content-wrapper">
-<section class="content">
-	<div class="container-fluid">		
+<section class="content-fluid">
+	
 		<div class="row">
-      <div class="col-lg-2 col-xs-12">        	
+      <div class="col-xs-12">        	
 				<div class="box box-block bg-white">
 					<div>
 						<h5 style="color: red; font-size: 25px">Danh sách nhân viên</h5>
@@ -72,7 +72,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+
 </section>
 </div>
 @endsection
